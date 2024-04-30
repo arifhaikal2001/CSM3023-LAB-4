@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Using JSP Scripting</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Use JSP Scriptlet and JSP Expression in Application</h1>
+         <h2 style="color: #B95CF4;">Customer discount</h2>
+
+        <form action="processCustomer.jsp" method="post">
+            <label for="customer_code">Customer Code:</label>
+            <input type="number" id="customercode" name="customer_code" placeholder="Key-in customer code" required><br><br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" placeholder="Key-in quantity" required><br><br>
+
+            <label>Customer Type:</label>
+            <ul id="custtype" name="cust_type" required>
+                <input type="radio" id="1" name="cust_type" value="1" required><label for="normal">Normal Customer</label>
+                <input type="radio" id="2" name="cust_type" value="2" required><label for="privilege">Privilege Customer</label>
+            </ul>
+
+            <button type="submit">Submit</button>
+            <button type="reset">Cancel</button>
+        </form>
+         <br><br>
+    </body>
+    <footer>
+        &copy;2024 ARIF HAIKAL
+    </footer>
+</html>
